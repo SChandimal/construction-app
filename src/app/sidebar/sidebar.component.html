@@ -1,9 +1,19 @@
 <div class="ui top fixed menu inverted" style="background-color: dimgrey">
-  <div class="right menu">
+  <div class="left menu">
     <div class="item">
       <div class="smail ui icon input">
+        <a class="item" style="font-weight: bold; font-size: small">
+          <i class="university icon"></i>
+          Construction
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="right menu">
+    <div class="item">
+      <div class="smail ui left icon input">
+        <i class="users icon"></i>
         <input type="text" placeholder="Search...">
-        <i class="search link icon"></i>
       </div>
     </div>
     <a class="smail ui item" routerLink="login">
@@ -22,7 +32,7 @@
     </a>
     <a class="item">
     </a>
-    <a class="item">
+    <a class="item" routerLink="homePage">
       <i class="home icon"></i>
       Home
     </a>
@@ -62,10 +72,13 @@
       <i class="money bill alternate icon"></i>
       Accounting
     </a>
+    <a class="item" routerLink="dailyMaterial">
+      <i class="money bill alternate icon"></i>
+      Daily Material Usage
+    </a>
   </div>
   <div class="pusher">
-    <div class="ui basic segment" style="margin-top: 5%">
-      <h3 class="ui header">Application Content</h3>
+    <div class="ui basic segment" style="margin-top: 3%">
       <router-outlet></router-outlet>
     </div>
   </div>
