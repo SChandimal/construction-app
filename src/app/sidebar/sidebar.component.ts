@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
+declare var $: any;
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
   }
+
+  ngOnInit() {}
+
+  logout = function () {
+    alert('login');
+  };
 
 }
